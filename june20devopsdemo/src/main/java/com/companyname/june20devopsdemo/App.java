@@ -28,5 +28,11 @@ public class App {
 		System.out.println(employeejson);
 		return "employee saves successfully";
 	}
+	
+	@RequestMapping(value = "/saveProduct", method = RequestMethod.POST)
+	public String saveProduct(@RequestBody String productjson) {
+		System.out.println(productjson);
+		return "productjson saves successfully";
+	}
 
 }
